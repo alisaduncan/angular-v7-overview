@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>AngularKC</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/custom.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<img src="images/angular.svg" width="50%" class="plain">
+					<h1>Angular v7 is here!</h1>
+				</section>
+				<section>
+					<img src="images/angular.svg" width="30%" class="plain">
+					<h1>Angular Core</h1>
+				</section>
+				<section>
+					<header>Angular Core</header>
+					<section>
+						<h2>Angular Elements</h2>
+						<aside class="fragment shrink">
+							&ldquo;Angular elements are Angular components packaged as custom elements, a web standard for defining new HTML elements in a framework-agnostic way.&rdquo;<br/>
+								<cite><a href="https://angular.io/guide/elements">Read more on Angular's documentation site.</a></cite>
+						</aside>
+						<p>Content projection is now supported.</p>
+					</section>
+					<section>
+						<h2>Ivy</h2>
+						<aside class="fragment shrink">Ivy is the new compiler version with built in support for tree-shaking and big improvements in build times. Using Ivy, a Hello World app is &lt;10kb.</aside>
+						<p class="fragment">Work is ongoing. You can opt-in now to check it out. There are lots of tutorials out there to do so.</p>
+					</section>
+					<section>
+						<h2>Dependency updates</h2>
+						<p>Updated dependencies, notably Typescript v3.1, RxJS 6.3, and Node 10.</p>
+					</section>
+					<section>
+						<h2>Updates to <code>mat-form-field</code></h2>
+						<p>Added the native <code>select</code> element inside <code>mat-form-field</code> for performance, a11y, and usability.</p>
+					</section>
+				</section>
+				<section>
+					<img src="images/cli.svg" width="30%" class="plain">
+					<h1>Angular CLI</h1>
+				</section>
+				<section>
+					<header>Angular CLI</header>
+					<section>
+						<h2>CLI prompts</h2>
+						<p>Prompts when generating a new application to set styles and add a router</p>
+						<img src="images/new-app.png" class="plain">
+					</section>
+					<section>
+						<h2>Budgets</h2>
+						<aside class="fragment shrink">Keep your bundles small and performance snappy! You can adjust the values in <code>angular.json</code>.</aside>
+						<p>
+							Default values provided when generating a new application
+							<ul>
+								<li>Warning at 2MB</li>
+								<li>Error at 5MB</li>
+							</ul>
+						</p>
+					</section>
+					<section>
+						<h2>Clean up unnecessary polyfills</h2>
+						<p>The reflect polyfills will no longer be enabled by default in order to help performance.</p>
+					</section>
+				</section>
+				<section>
+					<img src="images/material.svg" width="30%" class="plain">
+					<h1>Angular Material</h1>
+				</section>
+				<section>
+					<header>Angular Material</header>
+					<section>
+						<h2>Schematics updates</h2>
+						<p>Get prompted when adding Material.</p>
+						<img src="images/material.png" class="plain">
+					</section>
+					<section>
+						<h2>Material design style updates</h2>
+						<aside class="fragment shrink">Material design got a refresh as announced at Google I/O.</aside>
+						<p>The Material controls styles have been updated and there are more customization available on the controls and coming in themes.</p>
+					</section>
+					<section>
+						<h2>Virtual Scroll</h2>
+						<p>Virtual scroll is now available via the CDK. Who doesn't want to scroll forever?</p>
+					</section>
+					<section>
+						<h2>Drag and Drop</h2>
+						<p>The CDK keeps getting better!</p>
+					</section>
+				</section>
+				<section>
+					<h1>Easy updates</h1>
+					<p>Updating is easy if you're using Angular v6</p>
+					<pre>ng update @angular/cli @angular/core</pre>
+					<pre>ng update @angular/material</pre>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
