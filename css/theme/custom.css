@@ -7,11 +7,11 @@
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
   color: #f5f5f5; }
 
-section > aside {
-  font-style: italic !important;
+section .background-info {
+  font-style: italic;
   color: #585858; }
-  section > aside > cite > a {
-    font-size: 0.5em !important; }
+  section .background-info .reference-link {
+    font-size: 0.5em; }
 
 section > header {
   color: gray; }

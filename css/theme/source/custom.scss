@@ -44,12 +44,12 @@ section.has-dark-background {
 }
 
 section {
-	& > aside {
-		font-style: italic !important;
+	.background-info {
+		font-style: italic;
 		color: #585858;
 
-		& > cite > a {
-			font-size: 0.5em !important;
+		.reference-link {
+			font-size: 0.5em;
 		}
 	} 
 
